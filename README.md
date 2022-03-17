@@ -3,6 +3,8 @@
 
 ## how to run it.
 
+I recommand openning it in VS Code.
+
 ### At the first time.
 ```
 npm install 
@@ -15,7 +17,7 @@ Connecting an emulator or device in advance of this step.
 
 2. one of them run:
 ```
-npm run start  # it will run in background. To close it, close that terminal used. 
+npm run start
 ``` 
 
 3. another of them run:
