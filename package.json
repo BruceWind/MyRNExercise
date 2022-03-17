@@ -42,7 +42,8 @@
       {
         "files": ["**/*.js?(x)"],
         "rules": {
-          "additional-typescript-only-rule": "warn"
+          "additional-typescript-only-rule": "warn",
+          "skipBlankLines" : "false"
         }
       }
     ]
