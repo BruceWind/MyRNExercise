@@ -26,4 +26,8 @@ npm run android
 ```
 
 
+### In addition 
+If you run it on emulator, you may got white screen. To solve it, run 'adb reverse tcp:8081 tcp:8081'.
+
+
 
