@@ -1,11 +1,16 @@
 import * as React from 'react';
-import {Button} from 'react-native';
+import {NativeModules, Button} from 'react-native';
+
+const {AndroidToast} = NativeModules;
 
 const HomeScreen = ({navigation}) => {
   return (
     <Button
       title="Go to Jane's profile"
-      onPress={() => navigation.navigate('Profile', {name: 'Jane'})}
+      onPress={() => {
+        navigation.navigate('Profile', {name: 'Jane'});
+        AndroidToast.toast('jump');
+      }}
     />
   );
 };
