@@ -12,6 +12,8 @@ import {NavigationContainer} from '@react-navigation/native';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import HomeScreen from './webpack/Home';
 import ProfileScreen from './webpack/ProfileScreen';
+import DetailsScreen from './webpack/DetailsScreen';
+import LoginScreen from './webpack/LoginScreen';
 
 import {StyleSheet, Text, useColorScheme, View} from 'react-native';
 
@@ -35,6 +37,8 @@ const App = () => {
           options={{title: 'Welcome'}}
         />
         <Stack.Screen name="Profile" component={ProfileScreen} />
+        <Stack.Screen name="Details" component={DetailsScreen} />
+        <Stack.Screen name="Login" component={LoginScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

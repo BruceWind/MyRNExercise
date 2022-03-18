@@ -12,6 +12,7 @@
   "dependencies": {
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/native-stack": "^6.5.0",
+    "expo-status-bar": "^1.2.0",
     "react": "17.0.2",
     "react-native": "0.67.3",
     "react-native-gesture-handler": "^2.3.2",
@@ -34,13 +35,18 @@
     "preset": "react-native"
   },
   "eslintConfig": {
-    "extends": ["react-app", "shared-config"],
+    "extends": [
+      "react-app",
+      "shared-config"
+    ],
     "rules": {
       "additional-rule": "warn"
     },
     "overrides": [
       {
-        "files": ["**/*.js?(x)"],
+        "files": [
+          "**/*.js?(x)"
+        ],
         "rules": {
           "additional-typescript-only-rule": "warn"
         }
