@@ -13,8 +13,9 @@ const HomeScreen = ({navigation}) => {
     <Button
       title="Go to Jane's profile"
       onPress={() => {
-        navigation.navigate('Profile', {name: 'Jane'});
-        waitResult();
+        // navigation.navigate('Profile', {name: 'Jane'});
+        navigation.navigate('Login');
+        AndroidToast.toast('jump');
       }}
     />
   );
